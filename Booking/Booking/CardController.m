@@ -1,19 +1,18 @@
 //
-//  LoginController.m
-//  Hotels
+//  CardController.m
+//  Booking
 //
 //  Created by Admin on 27.05.16.
 //  Copyright © 2016 Admin. All rights reserved.
 //
 
-#import "LoginController.h"
+#import "CardController.h"
 
-@interface LoginController ()
-@property (strong, nonatomic) IBOutlet UITextField *password;
+@interface CardController ()
 
 @end
 
-@implementation LoginController
+@implementation CardController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

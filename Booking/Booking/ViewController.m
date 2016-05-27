@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  Hotels
+//  Booking
 //
 //  Created by Admin on 27.05.16.
 //  Copyright © 2016 Admin. All rights reserved.
@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *login;
+@property (strong, nonatomic) IBOutlet UITextField *password;
 
 @end
 
