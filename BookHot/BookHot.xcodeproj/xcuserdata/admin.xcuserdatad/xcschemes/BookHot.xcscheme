@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84D8C5D41CF8D17F00BC552C"
-               BuildableName = "Booking.app"
-               BlueprintName = "Booking"
-               ReferencedContainer = "container:Booking.xcodeproj">
+               BlueprintIdentifier = "84613D971CF8DC2D00EDFB38"
+               BuildableName = "BookHot.app"
+               BlueprintName = "BookHot"
+               ReferencedContainer = "container:BookHot.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84D8C5D41CF8D17F00BC552C"
-            BuildableName = "Booking.app"
-            BlueprintName = "Booking"
-            ReferencedContainer = "container:Booking.xcodeproj">
+            BlueprintIdentifier = "84613D971CF8DC2D00EDFB38"
+            BuildableName = "BookHot.app"
+            BlueprintName = "BookHot"
+            ReferencedContainer = "container:BookHot.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84D8C5D41CF8D17F00BC552C"
-            BuildableName = "Booking.app"
-            BlueprintName = "Booking"
-            ReferencedContainer = "container:Booking.xcodeproj">
+            BlueprintIdentifier = "84613D971CF8DC2D00EDFB38"
+            BuildableName = "BookHot.app"
+            BlueprintName = "BookHot"
+            ReferencedContainer = "container:BookHot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84D8C5D41CF8D17F00BC552C"
-            BuildableName = "Booking.app"
-            BlueprintName = "Booking"
-            ReferencedContainer = "container:Booking.xcodeproj">
+            BlueprintIdentifier = "84613D971CF8DC2D00EDFB38"
+            BuildableName = "BookHot.app"
+            BlueprintName = "BookHot"
+            ReferencedContainer = "container:BookHot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
