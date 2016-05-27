@@ -16,7 +16,12 @@
 		84613DAE1CF8DC2D00EDFB38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84613DAC1CF8DC2D00EDFB38 /* LaunchScreen.storyboard */; };
 		84613DB71CF8DC5500EDFB38 /* CardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DB61CF8DC5500EDFB38 /* CardController.m */; };
 		84613DB91CF8DCB600EDFB38 /* 3а.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84613DB81CF8DCB600EDFB38 /* 3а.jpg */; };
-		84613DBB1CF8DCBB00EDFB38 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84613DBA1CF8DCBB00EDFB38 /* 2.jpg */; };
+		84613DBD1CF8E1BA00EDFB38 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84613DBC1CF8E1BA00EDFB38 /* 1.jpg */; };
+		84613DC11CF8E2BE00EDFB38 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84613DC01CF8E2BE00EDFB38 /* 2.png */; };
+		84613DCA1CF8E5CD00EDFB38 /* HotelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DC91CF8E5CD00EDFB38 /* HotelController.m */; };
+		84613DCC1CF8E93600EDFB38 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84613DCB1CF8E93600EDFB38 /* 4.jpg */; };
+		84613DCF1CF8E95800EDFB38 /* FlightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DCE1CF8E95800EDFB38 /* FlightController.m */; };
+		84613DD11CF8EB4400EDFB38 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84613DD01CF8EB4400EDFB38 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +39,14 @@
 		84613DB51CF8DC5500EDFB38 /* CardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardController.h; sourceTree = "<group>"; };
 		84613DB61CF8DC5500EDFB38 /* CardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardController.m; sourceTree = "<group>"; };
 		84613DB81CF8DCB600EDFB38 /* 3а.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3а.jpg"; sourceTree = "<group>"; };
-		84613DBA1CF8DCBB00EDFB38 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		84613DBC1CF8E1BA00EDFB38 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		84613DC01CF8E2BE00EDFB38 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		84613DC81CF8E5CD00EDFB38 /* HotelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelController.h; sourceTree = "<group>"; };
+		84613DC91CF8E5CD00EDFB38 /* HotelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelController.m; sourceTree = "<group>"; };
+		84613DCB1CF8E93600EDFB38 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		84613DCD1CF8E95800EDFB38 /* FlightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightController.h; sourceTree = "<group>"; };
+		84613DCE1CF8E95800EDFB38 /* FlightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightController.m; sourceTree = "<group>"; };
+		84613DD01CF8EB4400EDFB38 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84613DD11CF8EB4400EDFB38 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +64,7 @@
 		84613D8F1CF8DC2D00EDFB38 = {
 			isa = PBXGroup;
 			children = (
+				84613DD01CF8EB4400EDFB38 /* MapKit.framework */,
 				84613D9A1CF8DC2D00EDFB38 /* BookHot */,
 				84613D991CF8DC2D00EDFB38 /* Products */,
 			);
@@ -73,13 +87,19 @@
 				84613DA21CF8DC2D00EDFB38 /* ViewController.m */,
 				84613DA41CF8DC2D00EDFB38 /* Main.storyboard */,
 				84613DAA1CF8DC2D00EDFB38 /* Assets.xcassets */,
-				84613DBA1CF8DCBB00EDFB38 /* 2.jpg */,
+				84613DBC1CF8E1BA00EDFB38 /* 1.jpg */,
+				84613DC01CF8E2BE00EDFB38 /* 2.png */,
+				84613DCB1CF8E93600EDFB38 /* 4.jpg */,
 				84613DB81CF8DCB600EDFB38 /* 3а.jpg */,
 				84613DAC1CF8DC2D00EDFB38 /* LaunchScreen.storyboard */,
 				84613DAF1CF8DC2D00EDFB38 /* Info.plist */,
 				84613DA71CF8DC2D00EDFB38 /* BookHot.xcdatamodeld */,
 				84613DB51CF8DC5500EDFB38 /* CardController.h */,
 				84613DB61CF8DC5500EDFB38 /* CardController.m */,
+				84613DC81CF8E5CD00EDFB38 /* HotelController.h */,
+				84613DC91CF8E5CD00EDFB38 /* HotelController.m */,
+				84613DCD1CF8E95800EDFB38 /* FlightController.h */,
+				84613DCE1CF8E95800EDFB38 /* FlightController.m */,
 				84613D9B1CF8DC2D00EDFB38 /* Supporting Files */,
 			);
 			path = BookHot;
@@ -150,11 +170,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84613DCC1CF8E93600EDFB38 /* 4.jpg in Resources */,
 				84613DB91CF8DCB600EDFB38 /* 3а.jpg in Resources */,
+				84613DC11CF8E2BE00EDFB38 /* 2.png in Resources */,
 				84613DAE1CF8DC2D00EDFB38 /* LaunchScreen.storyboard in Resources */,
-				84613DBB1CF8DCBB00EDFB38 /* 2.jpg in Resources */,
 				84613DAB1CF8DC2D00EDFB38 /* Assets.xcassets in Resources */,
 				84613DA61CF8DC2D00EDFB38 /* Main.storyboard in Resources */,
+				84613DBD1CF8E1BA00EDFB38 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,10 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84613DCA1CF8E5CD00EDFB38 /* HotelController.m in Sources */,
 				84613DA31CF8DC2D00EDFB38 /* ViewController.m in Sources */,
 				84613DA01CF8DC2D00EDFB38 /* AppDelegate.m in Sources */,
 				84613DA91CF8DC2D00EDFB38 /* BookHot.xcdatamodeld in Sources */,
 				84613D9D1CF8DC2D00EDFB38 /* main.m in Sources */,
+				84613DCF1CF8E95800EDFB38 /* FlightController.m in Sources */,
 				84613DB71CF8DC5500EDFB38 /* CardController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +342,7 @@
 				84613DB41CF8DC2D00EDFB38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
