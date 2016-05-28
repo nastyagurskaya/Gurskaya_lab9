@@ -7,10 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "CardController.h"
+@interface ViewController (){
+    NSArray *resultLog;
+}
 
-@interface ViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *login;
 @property (strong, nonatomic) IBOutlet UITextField *password;
+@property (strong, nonatomic) IBOutlet UILabel *text;
 
 @end
 
@@ -25,5 +29,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)signIn:(id)sender {
+    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    resultLog = [app getPasswordWithLogin:[_login text]];
+    if([resultLog count] > 0) {
+     [self performSegueWithIdentifier:@"ShowHotel" sender:self];
+     }
+     else {
+     [_text setText:@"Illegal data"];
+     }
+}
+
 
 @end

@@ -22,6 +22,8 @@
 		84613DCC1CF8E93600EDFB38 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84613DCB1CF8E93600EDFB38 /* 4.jpg */; };
 		84613DCF1CF8E95800EDFB38 /* FlightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DCE1CF8E95800EDFB38 /* FlightController.m */; };
 		84613DD11CF8EB4400EDFB38 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84613DD01CF8EB4400EDFB38 /* MapKit.framework */; };
+		84613DD61CF9049200EDFB38 /* SignIn+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DD31CF9049200EDFB38 /* SignIn+CoreDataProperties.m */; };
+		84613DD71CF9049200EDFB38 /* SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DD51CF9049200EDFB38 /* SignIn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		84613DCD1CF8E95800EDFB38 /* FlightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightController.h; sourceTree = "<group>"; };
 		84613DCE1CF8E95800EDFB38 /* FlightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightController.m; sourceTree = "<group>"; };
 		84613DD01CF8EB4400EDFB38 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84613DD21CF9049200EDFB38 /* SignIn+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignIn+CoreDataProperties.h"; sourceTree = "<group>"; };
+		84613DD31CF9049200EDFB38 /* SignIn+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignIn+CoreDataProperties.m"; sourceTree = "<group>"; };
+		84613DD41CF9049200EDFB38 /* SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignIn.h; sourceTree = "<group>"; };
+		84613DD51CF9049200EDFB38 /* SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignIn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				84613DAC1CF8DC2D00EDFB38 /* LaunchScreen.storyboard */,
 				84613DAF1CF8DC2D00EDFB38 /* Info.plist */,
 				84613DA71CF8DC2D00EDFB38 /* BookHot.xcdatamodeld */,
+				84613DD21CF9049200EDFB38 /* SignIn+CoreDataProperties.h */,
+				84613DD31CF9049200EDFB38 /* SignIn+CoreDataProperties.m */,
+				84613DD41CF9049200EDFB38 /* SignIn.h */,
+				84613DD51CF9049200EDFB38 /* SignIn.m */,
 				84613DB51CF8DC5500EDFB38 /* CardController.h */,
 				84613DB61CF8DC5500EDFB38 /* CardController.m */,
 				84613DC81CF8E5CD00EDFB38 /* HotelController.h */,
@@ -188,11 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84613DCA1CF8E5CD00EDFB38 /* HotelController.m in Sources */,
+				84613DD61CF9049200EDFB38 /* SignIn+CoreDataProperties.m in Sources */,
 				84613DA31CF8DC2D00EDFB38 /* ViewController.m in Sources */,
 				84613DA01CF8DC2D00EDFB38 /* AppDelegate.m in Sources */,
 				84613DA91CF8DC2D00EDFB38 /* BookHot.xcdatamodeld in Sources */,
 				84613D9D1CF8DC2D00EDFB38 /* main.m in Sources */,
 				84613DCF1CF8E95800EDFB38 /* FlightController.m in Sources */,
+				84613DD71CF9049200EDFB38 /* SignIn.m in Sources */,
 				84613DB71CF8DC5500EDFB38 /* CardController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

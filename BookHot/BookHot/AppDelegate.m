@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SignIn.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //if (![[NSUserDefaults standardUserDefaults]
+        //boolForKey:@"HasLaunchedOnce"]) {
+    //[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        SignIn * nastya = [NSEntityDescription insertNewObjectForEntityForName:@"SignIn"
+                                                            inManagedObjectContext:self.managedObjectContext];
+        nastya.login = @"nastya";
+        nastya.password = @"123456";
+        SignIn * julia = [NSEntityDescription insertNewObjectForEntityForName:@"SignIn"
+                                                        inManagedObjectContext:self.managedObjectContext];
+        julia.login = @"julia";
+        julia.password = @"123123";
+        SignIn * mary = [NSEntityDescription insertNewObjectForEntityForName:@"SignIn"
+                                                        inManagedObjectContext:self.managedObjectContext];
+        mary.login = @"mary";
+        mary.password = @"456456";
+        
+    //}
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -123,5 +142,14 @@
         }
     }
 }
-
+- (NSArray *)getPasswordWithLogin:(NSString *)login
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"login == %@", login]];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"SignIn" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    NSError* error;
+    NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    return fetchedRecords;
+}
 @end

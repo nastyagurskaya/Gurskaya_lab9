@@ -50,21 +50,6 @@
                                     <rect key="frame" x="86" y="194" width="117" height="49"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWe-ie-23k">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="152" y="289" width="116" height="53"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="fYZ-eB-FHl" kind="show" id="091-wX-b6m"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Password" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="NXT-wS-hVr">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,6 +60,28 @@
                                     <rect key="frame" x="86" y="243" width="249" height="30"/>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3a-Ic-Qug">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.031332582376397355" blue="0.22417419444609865" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="89" y="76" width="179" height="42"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtV-qP-vlv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <state key="normal" title="SingIn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="147" y="290" width="126" height="69"/>
+                                </variation>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vV-SC-V97"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -83,8 +90,9 @@
                                 <exclude reference="3eI-s5-4O5"/>
                                 <exclude reference="wgq-a9-pCW"/>
                                 <exclude reference="aJr-Fm-vff"/>
-                                <exclude reference="lWe-ie-23k"/>
                                 <exclude reference="NXT-wS-hVr"/>
+                                <exclude reference="H3a-Ic-Qug"/>
+                                <exclude reference="gtV-qP-vlv"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -93,14 +101,17 @@
                                 <include reference="3eI-s5-4O5"/>
                                 <include reference="wgq-a9-pCW"/>
                                 <include reference="aJr-Fm-vff"/>
-                                <include reference="lWe-ie-23k"/>
                                 <include reference="NXT-wS-hVr"/>
+                                <include reference="H3a-Ic-Qug"/>
+                                <include reference="gtV-qP-vlv"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="login" destination="3eI-s5-4O5" id="EBv-D3-nKE"/>
                         <outlet property="password" destination="NXT-wS-hVr" id="nPA-MJ-S6a"/>
+                        <outlet property="text" destination="H3a-Ic-Qug" id="RSb-n1-mMO"/>
+                        <segue destination="fYZ-eB-FHl" kind="showDetail" identifier="ShowHotel" id="jwl-CN-Dia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,6 +127,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FSv-oh-jSS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ckd-4U-9Zf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gEV-08-dzj">
@@ -343,6 +355,7 @@
                         <viewControllerLayoutGuide type="bottom" id="OEp-ea-suf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hd8-zj-MtP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ouF-BO-Qoo">
@@ -471,7 +484,7 @@
         <image name="4.jpg" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sck-k6-yJY"/>
-        <segue reference="fFB-rL-f87"/>
+        <segue reference="jwl-CN-Dia"/>
+        <segue reference="QP0-IJ-HNa"/>
     </inferredMetricsTieBreakers>
 </document>
