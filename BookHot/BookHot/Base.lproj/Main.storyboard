@@ -158,6 +158,10 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="30" y="102" width="360" height="275"/>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="fYZ-eB-FHl" id="1Bh-DZ-Zwk"/>
+                                    <outlet property="delegate" destination="fYZ-eB-FHl" id="Xcv-dV-KSl"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Of The Hotel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-yW-1K0">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -500,6 +504,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jwl-CN-Dia"/>
-        <segue reference="Sck-k6-yJY"/>
+        <segue reference="QP0-IJ-HNa"/>
     </inferredMetricsTieBreakers>
 </document>
