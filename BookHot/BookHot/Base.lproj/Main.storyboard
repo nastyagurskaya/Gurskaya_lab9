@@ -111,12 +111,12 @@
                         <outlet property="login" destination="3eI-s5-4O5" id="EBv-D3-nKE"/>
                         <outlet property="password" destination="NXT-wS-hVr" id="nPA-MJ-S6a"/>
                         <outlet property="text" destination="H3a-Ic-Qug" id="RSb-n1-mMO"/>
-                        <segue destination="fYZ-eB-FHl" kind="showDetail" identifier="ShowHotel" id="jwl-CN-Dia"/>
+                        <segue destination="fYZ-eB-FHl" kind="show" identifier="Show" id="iN0-aS-acb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892.5" y="22.5"/>
+            <point key="canvasLocation" x="873" y="22.5"/>
         </scene>
         <!--Hotel Controller-->
         <scene sceneID="qKg-KN-1JW">
@@ -149,20 +149,6 @@
                                     <rect key="frame" x="276" y="42" width="88" height="39"/>
                                 </variation>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b6t-Jh-n2B">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="0.39773637820512819" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="76" width="360" height="275"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="102" width="360" height="275"/>
-                                </variation>
-                                <connections>
-                                    <outlet property="dataSource" destination="fYZ-eB-FHl" id="1Bh-DZ-Zwk"/>
-                                    <outlet property="delegate" destination="fYZ-eB-FHl" id="Xcv-dV-KSl"/>
-                                </connections>
-                            </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Of The Hotel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-yW-1K0">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="15"/>
@@ -193,27 +179,40 @@
                                     <segue destination="hye-jg-I7M" kind="show" id="QP0-IJ-HNa"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bGR-RO-HZu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="0.44864282849999998" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="106" width="345" height="271"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="fYZ-eB-FHl" id="fnt-Lo-fWz"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="gEV-08-dzj"/>
                                 <exclude reference="hQJ-3r-xNy"/>
-                                <exclude reference="b6t-Jh-n2B"/>
                                 <exclude reference="mGd-yW-1K0"/>
                                 <exclude reference="tYf-iY-Or6"/>
+                                <exclude reference="bGR-RO-HZu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="gEV-08-dzj"/>
                                 <include reference="hQJ-3r-xNy"/>
-                                <include reference="b6t-Jh-n2B"/>
                                 <include reference="mGd-yW-1K0"/>
                                 <include reference="tYf-iY-Or6"/>
+                                <include reference="bGR-RO-HZu"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="listOfHotels" destination="bGR-RO-HZu" id="NEP-pE-4Gw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOI-EL-gqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -503,7 +502,7 @@
         <image name="4.jpg" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jwl-CN-Dia"/>
         <segue reference="QP0-IJ-HNa"/>
+        <segue reference="iN0-aS-acb"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -39,7 +39,7 @@
         SignIn *rec = (SignIn *)[resultLog objectAtIndex:0];
         if([rec.password compare:_password.text]==0) {
         
-     [self performSegueWithIdentifier:@"ShowHotel" sender:self];
+     [self performSegueWithIdentifier:@"Show" sender:self];
      }
     else {
         [_text setText:@"Illegal data"];

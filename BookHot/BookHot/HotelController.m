@@ -9,6 +9,7 @@
 #import "HotelController.h"
 
 @interface HotelController ()
+@property (strong, nonatomic) IBOutlet UITableView *listOfHotels;
 
 @end
 
