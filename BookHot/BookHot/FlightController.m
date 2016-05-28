@@ -31,7 +31,8 @@
     [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
     [self.map addGestureRecognizer:longPressGesture];
     isCity = 2;
-    resultFlights = nil;}
+    resultFlights = nil;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

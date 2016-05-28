@@ -186,6 +186,7 @@
                                     <rect key="frame" x="35" y="106" width="345" height="271"/>
                                 </variation>
                                 <connections>
+                                    <outlet property="dataSource" destination="fYZ-eB-FHl" id="5SV-g4-gb2"/>
                                     <outlet property="delegate" destination="fYZ-eB-FHl" id="fnt-Lo-fWz"/>
                                 </connections>
                             </tableView>
@@ -252,22 +253,13 @@
                                     <segue destination="fYZ-eB-FHl" kind="show" id="fFB-rL-f87"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCt-yc-Mxl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCt-yc-Mxl">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="54" y="287" width="120" height="58"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Room:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgu-SY-Vss">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="221" y="103" width="158" height="49"/>
+                                    <rect key="frame" x="47" y="322" width="120" height="58"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peF-aT-daR">
@@ -277,29 +269,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="17" y="353" width="367" height="313"/>
+                                    <rect key="frame" x="20" y="380" width="367" height="194"/>
                                 </variation>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ace-A5-UVv">
-                                <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
-                                <color key="backgroundColor" white="1" alpha="0.22480969549999999" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="223" y="150" width="155" height="134"/>
-                                </variation>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6a-rs-tYT">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="271" y="292" width="83" height="53"/>
+                                    <rect key="frame" x="277" y="324" width="83" height="53"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-Iq-Au2">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="232" y="570" width="155" height="71"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6eA-cC-ega">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="117" width="176" height="169"/>
+                                    <rect key="frame" x="20" y="150" width="176" height="169"/>
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl6-qH-eBo">
@@ -315,6 +309,34 @@
                                     <segue destination="7OU-cb-HsM" kind="show" id="luq-Yv-7UU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Room:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgu-SY-Vss">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="222" y="128" width="158" height="49"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWX-5I-36B">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="103" width="168" height="49"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJZ-BQ-QeA">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="0.22480969549999999" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="225" y="169" width="143" height="72"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -322,12 +344,14 @@
                                 <exclude reference="pMo-3h-kBB"/>
                                 <exclude reference="7ZJ-6H-Vt5"/>
                                 <exclude reference="aCt-yc-Mxl"/>
-                                <exclude reference="zgu-SY-Vss"/>
                                 <exclude reference="peF-aT-daR"/>
-                                <exclude reference="ace-A5-UVv"/>
                                 <exclude reference="d6a-rs-tYT"/>
+                                <exclude reference="Fuv-Iq-Au2"/>
                                 <exclude reference="6eA-cC-ega"/>
                                 <exclude reference="Nl6-qH-eBo"/>
+                                <exclude reference="zgu-SY-Vss"/>
+                                <exclude reference="UWX-5I-36B"/>
+                                <exclude reference="kJZ-BQ-QeA"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -335,15 +359,23 @@
                                 <include reference="pMo-3h-kBB"/>
                                 <include reference="7ZJ-6H-Vt5"/>
                                 <include reference="aCt-yc-Mxl"/>
-                                <include reference="zgu-SY-Vss"/>
                                 <include reference="peF-aT-daR"/>
-                                <include reference="ace-A5-UVv"/>
                                 <include reference="d6a-rs-tYT"/>
+                                <include reference="Fuv-Iq-Au2"/>
                                 <include reference="6eA-cC-ega"/>
                                 <include reference="Nl6-qH-eBo"/>
+                                <include reference="zgu-SY-Vss"/>
+                                <include reference="UWX-5I-36B"/>
+                                <include reference="kJZ-BQ-QeA"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="country" destination="Fuv-Iq-Au2" id="9ZI-v2-Voq"/>
+                        <outlet property="descr" destination="peF-aT-daR" id="evM-N6-Vw8"/>
+                        <outlet property="name" destination="UWX-5I-36B" id="OED-Mi-6AX"/>
+                        <outlet property="price" destination="d6a-rs-tYT" id="qLK-J2-ap9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ux2-12-BaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -502,7 +534,7 @@
         <image name="4.jpg" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="fFB-rL-f87"/>
         <segue reference="QP0-IJ-HNa"/>
-        <segue reference="iN0-aS-acb"/>
     </inferredMetricsTieBreakers>
 </document>

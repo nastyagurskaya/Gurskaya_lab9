@@ -7,8 +7,13 @@
 //
 
 #import "HotelController.h"
+#import "AppDelegate.h"
+#import "Hotel.h"
+@interface HotelController (){
+    AppDelegate *app;
+    NSMutableArray *resultHotels;
+}
 
-@interface HotelController ()
 @property (strong, nonatomic) IBOutlet UITableView *listOfHotels;
 
 @end
@@ -17,7 +22,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    resultHotels = nil;
+    app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    resultHotels = [app getHotels];
+    if([resultHotels count] > 0) {
+        [_listOfHotels reloadData];
+    }
+    else {
+        [_listOfHotels reloadData];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +38,39 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if(resultHotels == nil) {
+        return 0;
+    }
+    return [resultHotels count];
 }
-*/
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    //Поиск ячейки
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    //Если ячейка не найдена
+    if (cell == nil) {
+        //Создание ячейки
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:CellIdentifier];
+    }
+    Hotel *rec = (Hotel *)[resultHotels objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ | %@",rec.name,rec.place];
+    
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath) {
+        [app setSelectedHotel:resultHotels[indexPath.row]];
+    }
+}
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
 @end

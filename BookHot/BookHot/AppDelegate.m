@@ -9,8 +9,10 @@
 #import "AppDelegate.h"
 #import "SignIn.h"
 #import "Trip.h"
-@interface AppDelegate ()
-
+#import "Hotel.h"
+@interface AppDelegate (){
+Hotel *selectedHotel;
+}
 @end
 
 @implementation AppDelegate
@@ -81,10 +83,50 @@
                       numberWithInt:900.0]];
       //}
     _trips=[NSArray arrayWithObjects:one,two,three,four,five,six, nil];
+    Hotel* first = [[Hotel alloc]init];
+    
+    [first setPlace:@"Minsk"];
+    [first setDescription:@"Belarusian Hotel 555"];
+    [first setType:@"5 stars"];
+    [first setName:@"Plaza"];
+    [first setPrice : [NSNumber
+                       numberWithInt:2000.0]];
+    Hotel* second = [[Hotel alloc]init];
+    [second setPlace:@"Vilnus"];
+    [second setDescription:@"Perfect choise for familys"];
+    [second setType:@"4 stars"];
+    [second setName:@"Boutique Hotel"];
+    [second setPrice : [NSNumber
+                        numberWithInt:4000.0]];
+    
+    Hotel* third = [[Hotel alloc]init];
+    [third setPlace:@"Kiev"];
+    [third setDescription:@"Ukraine HOT"];
+    [third setType:@"5 stars"];
+    [third setName:@"LaVilia"];
+    [third setPrice : [NSNumber
+                       numberWithInt:3000.0]];
+    
+    Hotel* fourth = [[Hotel alloc]init];
+    [fourth setPlace:@"Vilnus"];
+    [fourth setDescription:@"1 2 3 Hotel eeeee"];
+    [fourth setType:@"5 stars"];
+    [fourth setName:@"Victoria"]; 
+    [fourth setPrice : [NSNumber 
+                        numberWithInt:4000.0]]; 
+    //} 
+    _hotels=[NSArray arrayWithObjects:first,second,third,fourth, nil];
     return YES;
 
 }
-
+- (void)setSelectedHotel:(Hotel *)book
+{
+    selectedHotel = book;
+}
+- (Hotel *)getHotelToShow
+{
+    return selectedHotel;
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -188,6 +230,11 @@
         }
     }
 }
+
+//- (NSArray *)getHotelsWithName:(NSString *)name
+//{
+   
+//}
 - (NSArray *)getPasswordWithLogin:(NSString *)login
 {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -206,7 +253,10 @@
            [array addObject:kk];
         }
     }
-   // [array addObject:nil];
     return array;
+}
+- (NSMutableArray *)getHotels{
+
+    return _hotels;
 }
 @end

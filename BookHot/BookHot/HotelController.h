@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface HotelController : UIViewController
-
+#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "AppDelegate.h"
+@interface HotelController: UIViewController <UITextFieldDelegate,UITableViewDataSource>
 @end

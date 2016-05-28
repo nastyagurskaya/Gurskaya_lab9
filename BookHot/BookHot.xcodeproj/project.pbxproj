@@ -25,6 +25,7 @@
 		84613DD61CF9049200EDFB38 /* SignIn+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DD31CF9049200EDFB38 /* SignIn+CoreDataProperties.m */; };
 		84613DD71CF9049200EDFB38 /* SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DD51CF9049200EDFB38 /* SignIn.m */; };
 		84613E041CF93B4100EDFB38 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613E031CF93B4100EDFB38 /* Trip.m */; };
+		84E9BDB71CF97CA40038FEE5 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9BDB61CF97CA40038FEE5 /* Hotel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		84613DD51CF9049200EDFB38 /* SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignIn.m; sourceTree = "<group>"; };
 		84613E021CF93B4100EDFB38 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
 		84613E031CF93B4100EDFB38 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		84E9BDB51CF97C9A0038FEE5 /* Hotel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
+		84E9BDB61CF97CA40038FEE5 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 			children = (
 				84613D9E1CF8DC2D00EDFB38 /* AppDelegate.h */,
 				84613D9F1CF8DC2D00EDFB38 /* AppDelegate.m */,
+				84E9BDB51CF97C9A0038FEE5 /* Hotel.h */,
+				84E9BDB61CF97CA40038FEE5 /* Hotel.m */,
 				84613DA11CF8DC2D00EDFB38 /* ViewController.h */,
 				84613DA21CF8DC2D00EDFB38 /* ViewController.m */,
 				84613DA41CF8DC2D00EDFB38 /* Main.storyboard */,
@@ -207,6 +212,7 @@
 				84613DD61CF9049200EDFB38 /* SignIn+CoreDataProperties.m in Sources */,
 				84613DA31CF8DC2D00EDFB38 /* ViewController.m in Sources */,
 				84613DA01CF8DC2D00EDFB38 /* AppDelegate.m in Sources */,
+				84E9BDB71CF97CA40038FEE5 /* Hotel.m in Sources */,
 				84613DA91CF8DC2D00EDFB38 /* BookHot.xcdatamodeld in Sources */,
 				84613D9D1CF8DC2D00EDFB38 /* main.m in Sources */,
 				84613DCF1CF8E95800EDFB38 /* FlightController.m in Sources */,

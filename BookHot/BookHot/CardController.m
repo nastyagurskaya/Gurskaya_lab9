@@ -7,8 +7,15 @@
 //
 
 #import "CardController.h"
-
-@interface CardController ()
+#import "AppDelegate.h"
+@interface CardController (){
+    AppDelegate *app;
+    Hotel *hotel;
+}
+@property (strong, nonatomic) IBOutlet UILabel *name;
+@property (strong, nonatomic) IBOutlet UILabel *price;
+@property (strong, nonatomic) IBOutlet UILabel *descr;
+@property (strong, nonatomic) IBOutlet UILabel *country;
 
 @end
 
@@ -16,22 +23,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+    app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    hotel = [app getHotelToShow];
+    if(hotel != nil) {
+        [self showBookInfo];
+    }}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)showBookInfo {
+      [_name setText:hotel.name];
+    [_price setText:[NSString stringWithFormat:@"%@",hotel.price]];
+    [_descr setText:hotel.description];
+    [_country setText:hotel.place];
 }
-*/
 
 @end
