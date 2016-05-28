@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CardController.h"
+#include "SignIn.h"
 @interface ViewController (){
     NSArray *resultLog;
 }
@@ -33,9 +34,17 @@
 - (IBAction)signIn:(id)sender {
     AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     resultLog = [app getPasswordWithLogin:[_login text]];
-    if([resultLog count] > 0) {
+    if([resultLog count]>0){
+
+        SignIn *rec = (SignIn *)[resultLog objectAtIndex:0];
+        if([rec.password compare:_password.text]==0) {
+        
      [self performSegueWithIdentifier:@"ShowHotel" sender:self];
      }
+    else {
+        [_text setText:@"Illegal data"];
+    }
+    }
      else {
      [_text setText:@"Illegal data"];
      }

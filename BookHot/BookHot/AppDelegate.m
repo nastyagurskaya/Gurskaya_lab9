@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SignIn.h"
+#import "Trip.h"
 @interface AppDelegate ()
 
 @end
@@ -33,8 +34,53 @@
                                                         inManagedObjectContext:self.managedObjectContext];
         mary.login = @"mary";
         mary.password = @"456456";
-        
-    //}
+    Trip* one = [[Trip alloc]init];
+    
+    [one setTransport:@"train"];
+    [one setCompany:@"Belarusian Railway"];
+    [one setCityFrom:@"Minsk"];
+    [one setCityTo:@"Vilnius"];
+    [one setPrice : [NSNumber
+                 numberWithInt:400.0]];
+    Trip* two = [[Trip alloc]init];
+    [two setTransport:@"plane"];
+    [two setCompany:@"FlyLAL"];
+    [two setCityFrom:@"Minsk"];
+    [two setCityTo:@"Vilnius"];
+    [two setPrice : [NSNumber
+                     numberWithInt:600.0]];
+
+    Trip* three = [[Trip alloc]init];
+    [three setTransport:@"bus"];
+    [three setCompany:@"Ecolines"];
+    [three setCityFrom:@"Minsk"];
+    [three setCityTo:@"Vilnius"];
+    [three setPrice : [NSNumber
+                     numberWithInt:300.0]];
+    Trip* four = [[Trip alloc]init];
+    [four setTransport:@"bus"];
+    [four setCompany:@"Ecolines"];
+    [four setCityFrom:@"Minsk"];
+    [four setCityTo:@"Kiev"];
+    [four setPrice : [NSNumber
+                       numberWithInt:350.0]];
+    Trip* five = [[Trip alloc]init];
+    [five setTransport:@"plan"];
+    [five setCompany:@"Belavia"];
+    [five setCityFrom:@"Minsk"];
+    [five setCityTo:@"Kiev"];
+    [five setPrice : [NSNumber
+                      numberWithInt:900.0]];
+
+    Trip* six = [[Trip alloc]init];
+    [six setTransport:@"train"];
+    [six setCompany:@"Lituva Railway"];
+    [six setCityFrom:@"Vilnius"];
+    [six setCityTo:@"Minsk"];
+    [six setPrice : [NSNumber
+                      numberWithInt:900.0]];
+      //}
+    _trips=[NSArray arrayWithObjects:one,two,three,four,five,six, nil];
     return YES;
 
 }
@@ -151,5 +197,16 @@
     NSError* error;
     NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
     return fetchedRecords;
+}
+- (NSMutableArray *)getFlightsWithCityFrom:(NSString *)cityFrom andCityTo:(NSString *)cityTo
+{
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:6];
+    for (Trip * kk in _trips) {
+        if ([kk.cityTo isEqualToString: cityTo]&&[kk.cityFrom isEqualToString: cityFrom]) {
+           [array addObject:kk];
+        }
+    }
+   // [array addObject:nil];
+    return array;
 }
 @end

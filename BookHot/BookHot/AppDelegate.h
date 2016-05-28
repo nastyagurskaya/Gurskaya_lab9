@@ -16,10 +16,11 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
+@property (nullable) NSArray *trips;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 - (NSArray *)getPasswordWithLogin:(NSString *)Login;
+- (NSMutableArray *)getFlightsWithCityFrom:(NSString *)cityFrom andCityTo:(NSString *)cityTo;
 
 @end
 

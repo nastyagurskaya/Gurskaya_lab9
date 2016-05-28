@@ -24,6 +24,7 @@
 		84613DD11CF8EB4400EDFB38 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84613DD01CF8EB4400EDFB38 /* MapKit.framework */; };
 		84613DD61CF9049200EDFB38 /* SignIn+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DD31CF9049200EDFB38 /* SignIn+CoreDataProperties.m */; };
 		84613DD71CF9049200EDFB38 /* SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613DD51CF9049200EDFB38 /* SignIn.m */; };
+		84613E041CF93B4100EDFB38 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 84613E031CF93B4100EDFB38 /* Trip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		84613DD31CF9049200EDFB38 /* SignIn+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignIn+CoreDataProperties.m"; sourceTree = "<group>"; };
 		84613DD41CF9049200EDFB38 /* SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignIn.h; sourceTree = "<group>"; };
 		84613DD51CF9049200EDFB38 /* SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignIn.m; sourceTree = "<group>"; };
+		84613E021CF93B4100EDFB38 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		84613E031CF93B4100EDFB38 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				84613DC91CF8E5CD00EDFB38 /* HotelController.m */,
 				84613DCD1CF8E95800EDFB38 /* FlightController.h */,
 				84613DCE1CF8E95800EDFB38 /* FlightController.m */,
+				84613E021CF93B4100EDFB38 /* Trip.h */,
+				84613E031CF93B4100EDFB38 /* Trip.m */,
 				84613D9B1CF8DC2D00EDFB38 /* Supporting Files */,
 			);
 			path = BookHot;
@@ -197,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84613E041CF93B4100EDFB38 /* Trip.m in Sources */,
 				84613DCA1CF8E5CD00EDFB38 /* HotelController.m in Sources */,
 				84613DD61CF9049200EDFB38 /* SignIn+CoreDataProperties.m in Sources */,
 				84613DA31CF8DC2D00EDFB38 /* ViewController.m in Sources */,
